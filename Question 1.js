@@ -1,8 +1,9 @@
 // WRite a JS Program to find the length of string.
 
-let len = (string) => {
-  return string.length;
-};
+function newCopyString(string) {
+  let CopyString = string.slice();
+  return CopyString;
+}
 
-let string = "Im pretty";
-console.log(len(string));
+let str = "HeloWorld";
+console.log(newCopyString(str));
